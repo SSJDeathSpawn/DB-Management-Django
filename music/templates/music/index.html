@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        .title {
+            background-color: blue;
+            width: 100%;
+        }
+        .normal {
+            background-color: red;
+            width: 100%;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body class="normal">
+    <div class="title">
+        <p align="center">Welcome to my Music Page</p>
+    </div>
+    <ul>
+        {% for album in all_albums %}
+        <li><a href="{{ album.id }}/">{{ album.album_title }}</a></li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
