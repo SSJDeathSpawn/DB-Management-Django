@@ -1,12 +1,24 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <style>
     .title {
         background-color: blue;
-        font-size: 20px;
+        border:blue 1px solid;
+        height: 100px;
+        font-size: 200%;
         color: darkred;
         width: 100%;
+        vertical-align: top;
+    }
+    .byLine {
+        background-color: darkred;
+        border:blue 1px solid;
+        height: 50px;
+        font-size: 110%;
+        color: lightblue;
+        width: 100%;
+        text-align-all: start;
+        vertical-align: top;
     }
     .normal {
         background-color: slategrey;
@@ -19,6 +31,9 @@
 <body class="normal">
     <div class="title">
         <p align="center">{{ album.album_title }}</p>
+    </div>
+    <div class="byLine">
+        <p> By :{{ album.artist }}</p>
     </div>
 </body>
 </html>
