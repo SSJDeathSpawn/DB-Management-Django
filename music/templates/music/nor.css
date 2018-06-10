@@ -1,0 +1,10 @@
+.title {
+        background-color: blue;
+        font-size: 20px;
+        color: darkred;
+        width: 100%;
+    }
+    .normal {
+        background-color: slategrey;
+        width: 100%;
+    }
